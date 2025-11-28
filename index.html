@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazone Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <div class="logo" aria-label="Amazone logo">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#fff"/><path d="M4 7h16v2H4zM4 11h10v2H4z" fill="#FF9900"/></svg>
+                Amazone
+            </div>
+
+            <div class="search" role="search" aria-label="Site search">
+                <input id="searchInput" type="search" placeholder="Search products, brands and more" aria-label="Search" />
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div class="nav-actions" role="navigation" aria-label="Main navigation">
+                <button id="accountBtn">Account</button>
+                <button id="ordersBtn">Orders</button>
+                <button id="cartBtn">Cart <span id="cartCount" class="cart-badge">0</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-card">
+                <h1>Welcome to Amazone — great deals, delivered fast</h1>
+                <p>Top picks for you. Free delivery on orders over $25. Explore categories and best sellers.</p>
+
+                <div class="categories" aria-label="Categories">
+                    <div class="cat">Today's Deals</div>
+                    <div class="cat">Electronics</div>
+                    <div class="cat">Home</div>
+                    <div class="cat">Fashion</div>
+                    <div class="cat">Beauty</div>
+                </div>
+
+                <div style="display:flex;gap:10px;margin-top:auto">
+                    <button class="btn">Shop Best Sellers</button>
+                    <button class="btn secondary">Try Prime</button>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <img class="banner" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=80" alt="banner" />
+            </div>
+        </section>
+
+        <section>
+            <h2 style="margin-top:20px">Featured products</h2>
+            <div class="products" id="productGrid">
+                <!-- product cards will be inlined here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
+            <div>&copy; 2025 Amazone Clone</div>
+            <div>Privacy · Terms · Help</div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
